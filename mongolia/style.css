@@ -729,6 +729,15 @@ header {
    ========================= */
 @media (max-width: 768px) {
 
+    .autoBlur,
+    .autoDisplay,
+    .autoTakeFull {
+        animation: none !important;
+        filter: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
   /* BODY / CONTAINER */
   body {
     overflow-x: hidden;
