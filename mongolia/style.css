@@ -24,7 +24,7 @@ body {
 
 header {
     position: fixed;
-    top: 3px;
+    top: 0;
     right: 0;
     left: 0;
     display: flex;
@@ -34,6 +34,7 @@ header {
     background-color: #4b4b4b5b;
     backdrop-filter: blur(10px);
     padding-bottom: 3px;
+    padding-top: 4px;
 }
 
 .head-left {
