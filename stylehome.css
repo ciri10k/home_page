@@ -850,7 +850,7 @@ header {
     .country-text {
         font-size: 42px;
         right: 18px;
-        bottom: 28px;
+        bottom: 38px;
     }
 
     /* PREVENT OVERFLOW */
@@ -859,7 +859,7 @@ header {
     }
 
     .country-text {
-    padding: 9px 12px;
+    padding: 10px 14px;
 }
 
     .sec1-video {
