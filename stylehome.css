@@ -65,7 +65,7 @@ header {
 .head-right3dot img {
     width: 30px;
     height: 30px;
-    margin-right: 20px;
+    margin-right: 20px;;
 }
 
 .dropdown {
@@ -741,6 +741,7 @@ header {
   position: relative;
   z-index: 10000;
   pointer-events: auto;
+  transform: scale(1.1);
 }
 
 header {
