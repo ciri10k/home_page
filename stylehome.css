@@ -868,4 +868,9 @@ header {
         object-fit: cover;
     }
 
+    .flag:active {
+  transform: scale(0.93);
+    }
+
+
 }
