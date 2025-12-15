@@ -22,6 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     z-index: 1000;
     background-color: transparent;
     backdrop-filter: blur(10px);
@@ -62,6 +63,12 @@ header {
     border-bottom: solid white; 
     transition: 0.5s ease;
 }
+
+    .head-right3dot {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
 
 .head-right3dot img {
     width: 40px;
@@ -787,4 +794,72 @@ header {
 
 .head-left button {
     margin-left: 0 !important;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+   ========================= */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        padding: 8px 10px;
+    }
+
+    .head-left button {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+
+
+    .head-right3dot img {
+        width: 28px;
+        height: 28px;
+        margin-right: 10px;
+    }
+
+    /* SECTION 1 */
+    .section1 {
+        height: 100vh;
+    }
+
+    .sec1-video {
+        object-fit: cover;
+    }
+
+    /* MAIN TITLE */
+    .sec1-info {
+        top: 70px;
+        left: 16px;
+        max-width: 90%;
+    }
+
+    .sec1-info h1 {
+        font-size: 42px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .sec1-info p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    /* COUNTRY NAME */
+    .country-text {
+        font-size: 42px;
+        right: 16px;
+        bottom: 20px;
+    }
+
+    /* PREVENT OVERFLOW */
+    body {
+        overflow-x: hidden;
+    }
+
+    .country-text {
+    padding: 6px 10px;
+}
+
 }
