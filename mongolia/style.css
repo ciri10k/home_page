@@ -725,9 +725,18 @@ header {
 }
 
 /* =========================
-   📱 MOBILE RESPONSIVE FIX
+   MOBILE RESPONSIVE STYLES
    ========================= */
 @media (max-width: 768px) {
+
+  /* BODY / CONTAINER */
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 100%;
+  }
 
   /* HEADER */
   header {
@@ -735,131 +744,110 @@ header {
   }
 
   .head-left button {
-    padding: 8px 18px;
+    padding: 6px 16px;
     font-size: 14px;
+  }
+
+  .head-right {
+    display: none; /* hide desktop menu */
   }
 
   .head-right3dot img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-  }
-
-  /* HERO SECTION */
-  .section1 {
-    height: 100svh; /* mobile safe viewport */
-  }
-
-  .sec1-info {
-    top: 90px;
-    left: 20px;
-    right: 20px;
-  }
-
-  .sec1-info h1 {
-    font-size: 52px;
-    line-height: 1;
-  }
-
-  .sec1-info p {
-    max-width: 100%;
-    font-size: 14px;
-  }
-
-  .country-text {
-    font-size: 48px;
-    right: 20px;
-    bottom: 20px;
-  }
-
-  /* VIDEO */
-  .sec1-video {
-    object-fit: cover;
+    width: 26px;
+    height: 26px;
   }
 
   /* SECTION 2 */
+  .section2 {
+    margin-top: 120px;
+    padding: 0 15px;
+  }
+
   .section2 h1 {
-    font-size: 52px;
-    padding: 0 10px;
+    font-size: 42px;
+    line-height: 1.1;
   }
 
   .section2 h2 {
-    font-size: 28px;
-    padding: 0 10px;
+    font-size: 26px;
   }
 
+  .section2 h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .section2 h5 {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* IMAGE BOX */
+  .image-box {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  /* CARDS / VIDEOS */
   .section2-cards {
     grid-template-columns: 1fr;
     gap: 20px;
-    margin-bottom: 150px;
-  }
-
-  /* SECTION 3 */
-  .section3 {
-    width: 95%;
-  }
-
-  .section3 h1 {
-    font-size: 50px;
-  }
-
-  .section3 h2 {
-    font-size: 28px;
-  }
-
-  .section3-cards {
-    grid-template-columns: 1fr;
     margin-bottom: 120px;
   }
 
   .card {
-    height: 50vh;
+    height: auto;
+  }
+
+  .card video,
+  .card img {
+    height: 220px;
   }
 
   .card:nth-child(1),
   .card:nth-child(2) {
-    grid-column: span 1;
-    grid-row: span 1;
-    height: 50vh;
+    grid-column: auto;
+    grid-row: auto;
+    height: auto;
   }
 
-  .card h1 {
-    font-size: 32px;
-  }
-
-  .card p {
-    font-size: 14px;
-    max-width: 90%;
-  }
-
-  /* SECTION 4 */
-  .section4 h1 {
-    font-size: 42px;
-  }
-
-  .section4 img {
-    display: none; /* hide decorative images */
-  }
-
-  /* SECTION 5 */
+  /* SECTION 5 (COMPARISON) */
   .section5 {
-    width: 95%;
+    width: 100%;
+    padding: 0 15px;
   }
 
   .section5 h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .comparison-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .compare-box h2 {
-    font-size: 22px;
+  .compare-box {
+    padding: 20px;
   }
 
   .compare-list {
     font-size: 15px;
+  }
+
+  /* REFERENCES */
+  .ref-toggle {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  /* SECTION 4 */
+  .section4 h1 {
+    font-size: 36px;
+  }
+
+  .section4 p {
+    margin-top: 60px;
   }
 
   /* FOOTER */
@@ -867,15 +855,10 @@ header {
     flex-direction: column;
     height: auto;
     padding: 20px 0;
+    gap: 15px;
   }
 
   .footer ul {
-    margin: 10px 0;
-    padding: 0;
-  }
-
-  .footer p {
-    margin: 10px 0;
-    font-size: 14px;
+    margin-right: 0;
   }
 }
