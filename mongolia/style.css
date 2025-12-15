@@ -5,6 +5,14 @@ body {
     scroll-behavior: smooth;
 }
 
+    video {
+    width: 90%;
+    height: auto;
+    display: block;
+    background-color: black;
+}
+
+
 .container {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
